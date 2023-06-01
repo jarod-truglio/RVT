@@ -1,0 +1,74 @@
+.all{
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    background-color: white;
+}
+.bascule{
+    animation: apparition 1.6s ease-out;
+}
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    margin-top: -10px;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+}
+a:hover {
+    color: rgba(200, 95, 10, 0.563);
+    text-decoration: underline;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav img{
+    width: 10%;
+    position: relative;
+    margin: 20px;
+}
+.pulse-anim{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgb(170, 65, 12);
+    animation: pulse 1.6s infinite;
+    margin: 30px;
+}
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 10px rgba(200, 95, 10, 0.303);
+    }
+}
+.picture{
+    border-radius: 70px;
+}
+.align{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    text-align: center;
+}
+.text{
+    margin: 40px;
+    font-size: 26px;
+}
+h1{
+    font-size: 32px;
+}
